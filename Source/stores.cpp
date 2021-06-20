@@ -62,15 +62,15 @@ _speech_id gossipend;
 
 /** Maps from towner IDs to NPC names. */
 const char *const TownerNames[] = {
-	"Griswold",
-	"Pepin",
+	"FPN3BO/LD",
+	"ZEZNH",
 	"",
-	"Ogden",
-	"Cain",
-	"Farnham",
-	"Adria",
-	"Gillian",
-	"Wirt"
+	"OFDEH",
+	"KANH",
+	"(PAPHAM",
+	"ADPNR",
+	"D)KN//NAH",
+	"BNPT"
 };
 
 void DrawSTextBack(const CelOutputBuffer &out)
@@ -173,7 +173,7 @@ void PrintStoreItem(ItemStruct *x, int l, uint16_t flags)
 		strcpy(tempstr, fmt::format(_("Dur: {:d}/{:d},  "), x->_iDurability, x->_iMaxDur).c_str());
 		strcat(sstr, tempstr);
 	} else {
-		strcat(sstr, _("Indestructible,  "));
+		strcat(sstr, _("HEPA3PYUNMO,  "));
 	}
 	if (x->_itype == ITYPE_MISC)
 		sstr[0] = '\0';
@@ -181,9 +181,9 @@ void PrintStoreItem(ItemStruct *x, int l, uint16_t flags)
 	uint8_t mag = x->_iMinMag;
 	int8_t dex = x->_iMinDex;
 	if (str == 0 && mag == 0 && dex == 0) {
-		strcat(sstr, _("No required attributes"));
+		strcat(sstr, _("HET TPE#OBAHN&"));
 	} else {
-		strcpy(tempstr, _("Required:"));
+		strcpy(tempstr, _("TPE#.:"));
 		if (str != 0)
 			strcpy(tempstr + strlen(tempstr), fmt::format(_(" {:d} Str"), str).c_str());
 		if (mag != 0)
@@ -214,15 +214,15 @@ void S_StartSmith()
 {
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 1, _("Welcome to the"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 3, _("Blacksmith's shop"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 7, _("Would you like to:"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 10, _("Talk to Griswold"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 12, _("Buy basic items"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 14, _("Buy premium items"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 16, _("Sell items"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 18, _("Repair items"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 20, _("Leave the shop"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 1, _("DO#PO ZO)KA/OBATL B"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 3, _("/ABKY KY3HEQA"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 7, _("4TO XOTNTE?"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 10, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 12, _("KYZNTL O#LI4HLIE ZPEDMETLI"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 14, _("KYZNTL MAFN4ECKNE ZPEDMETLI"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 16, _("ZPODATL ZPEDMETLI"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 18, _("OTPEMOHTNPOBATL ZPEDMETLI"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 20, _("ZOKNHYTL /ABKY"), UIS_SILVER | UIS_CENTER, true);
 	AddSLine(5);
 	storenumh = 20;
 }
@@ -266,7 +266,7 @@ void S_StartSBuy()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollSBuy(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, false);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, false);
 	OffsetSTextY(22, 6);
 
 	storenumh = 0;
@@ -329,7 +329,7 @@ bool S_StartSPBuy()
 	AddSText(0, 1, tempstr, UIS_GOLD | UIS_CENTER, false);
 	AddSLine(3);
 	AddSLine(21);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, false);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, false);
 	OffsetSTextY(22, 6);
 
 	stextsmax = storenumh - 4;
@@ -458,7 +458,7 @@ void S_StartSSell()
 		AddSText(0, 1, tempstr, UIS_GOLD | UIS_CENTER, false);
 		AddSLine(3);
 		AddSLine(21);
-		AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 		OffsetSTextY(22, 6);
 		return;
 	}
@@ -474,7 +474,7 @@ void S_StartSSell()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollSSell(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 	OffsetSTextY(22, 6);
 }
 
@@ -547,7 +547,7 @@ void S_StartSRepair()
 		AddSText(0, 1, tempstr, UIS_GOLD | UIS_CENTER, false);
 		AddSLine(3);
 		AddSLine(21);
-		AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 		OffsetSTextY(22, 6);
 		return;
 	}
@@ -563,7 +563,7 @@ void S_StartSRepair()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollSSell(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 	OffsetSTextY(22, 6);
 }
 
@@ -587,13 +587,13 @@ void S_StartWitch()
 	FillManaPlayer();
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 2, _("Witch's shack"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 9, _("Would you like to:"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 12, _("Talk to Adria"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 14, _("Buy items"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 16, _("Sell items"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 18, _("Recharge staves"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 20, _("Leave the shack"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 2, _("XN)KNHA BEDLMLI"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 9, _("4TO XOTNTE?"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 12, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 14, _("KYZNTL ZPEDMETLI"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 16, _("ZPODATL ZPEDMETLI"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 18, _("ZEPE3APRDNTL ZOCOX"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 20, _("ZOKNHYTL XN)KNHY"), UIS_SILVER | UIS_CENTER, true);
 	AddSLine(5);
 	storenumh = 20;
 }
@@ -640,7 +640,7 @@ void S_StartWBuy()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollWBuy(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, false);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, false);
 	OffsetSTextY(22, 6);
 
 	storenumh = 0;
@@ -732,7 +732,7 @@ void S_StartWSell()
 		AddSText(0, 1, tempstr, UIS_GOLD | UIS_CENTER, false);
 		AddSLine(3);
 		AddSLine(21);
-		AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 		OffsetSTextY(22, 6);
 		return;
 	}
@@ -748,7 +748,7 @@ void S_StartWSell()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollSSell(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 	OffsetSTextY(22, 6);
 }
 
@@ -813,7 +813,7 @@ void S_StartWRecharge()
 		AddSText(0, 1, tempstr, UIS_GOLD | UIS_CENTER, false);
 		AddSLine(3);
 		AddSLine(21);
-		AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 		OffsetSTextY(22, 6);
 		return;
 	}
@@ -829,7 +829,7 @@ void S_StartWRecharge()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollSSell(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 	OffsetSTextY(22, 6);
 }
 
@@ -839,7 +839,7 @@ void S_StartNoMoney()
 	stextscrl = false;
 	stextsize = true;
 	ClearSText(5, 23);
-	AddSText(0, 14, _("You do not have enough gold"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 14, _("HEDOCTATO4HO 3O/OTA"), UIS_SILVER | UIS_CENTER, true);
 }
 
 void S_StartNoRoom()
@@ -847,7 +847,7 @@ void S_StartNoRoom()
 	StartStore(stextshold);
 	stextscrl = false;
 	ClearSText(5, 23);
-	AddSText(0, 14, _("You do not have enough room in inventory"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 14, _("HET MECTA B NHBEHTAPE"), UIS_SILVER | UIS_CENTER, true);
 }
 
 void S_StartConfirm()
@@ -884,51 +884,51 @@ void S_StartConfirm()
 
 	switch (stextshold) {
 	case STORE_BBOY:
-		strcpy(tempstr, _("Do we have a deal?"));
+		strcpy(tempstr, _("ZODTBEPDNTL CDE/KY?"));
 		break;
 	case STORE_SIDENTIFY:
-		strcpy(tempstr, _("Are you sure you want to identify this item?"));
+		strcpy(tempstr, _("XOTNTE PACZO3HATL GTOT ZPEDMET?"));
 		break;
 	case STORE_HBUY:
 	case STORE_SPBUY:
 	case STORE_WBUY:
 	case STORE_SBUY:
-		strcpy(tempstr, _("Are you sure you want to buy this item?"));
+		strcpy(tempstr, _("XOTNTE KYZNTL GTOT ZPEDMET?"));
 		break;
 	case STORE_WRECHARGE:
-		strcpy(tempstr, _("Are you sure you want to recharge this item?"));
+		strcpy(tempstr, _("XOTNTE ZEPE3APRDNTL GTOT ZPEDMET?"));
 		break;
 	case STORE_SSELL:
 	case STORE_WSELL:
-		strcpy(tempstr, _("Are you sure you want to sell this item?"));
+		strcpy(tempstr, _("XOTNTE ZPODATL GTOT ZPEDMET?"));
 		break;
 	case STORE_SREPAIR:
-		strcpy(tempstr, _("Are you sure you want to repair this item?"));
+		strcpy(tempstr, _("XOTNTE ZO4NHNTL GTOT ZPEDMET?"));
 		break;
 	default:
 		app_fatal("Unknown store dialog %i", stextshold);
 	}
 	AddSText(0, 15, tempstr, UIS_SILVER | UIS_CENTER, false);
-	AddSText(0, 18, _("Yes"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 20, _("No"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 18, _("DA"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 20, _("HET"), UIS_SILVER | UIS_CENTER, true);
 }
 
 void S_StartBoy()
 {
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 2, _("Wirt the Peg-legged boy"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 2, _("KA/EKA BNPT"), UIS_GOLD | UIS_CENTER, false);
 	AddSLine(5);
 	if (!boyitem.isEmpty()) {
-		AddSText(0, 8, _("Talk to Wirt"), UIS_BLUE | UIS_CENTER, true);
-		AddSText(0, 12, _("I have something for sale,"), UIS_GOLD | UIS_CENTER, false);
-		AddSText(0, 14, _("but it will cost 50 gold"), UIS_GOLD | UIS_CENTER, false);
-		AddSText(0, 16, _("just to take a look. "), UIS_GOLD | UIS_CENTER, false);
-		AddSText(0, 18, _("What have you got?"), UIS_SILVER | UIS_CENTER, true);
-		AddSText(0, 20, _("Say goodbye"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 8, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+		AddSText(0, 12, _("Y MEHR KOE-4TO ECTL,"), UIS_GOLD | UIS_CENTER, false);
+		AddSText(0, 14, _("3AZ/ATN 50 3O/OTLIX"), UIS_GOLD | UIS_CENTER, false);
+		AddSText(0, 16, _("4TO#LI ZPOCTO B3F/RHYTL. "), UIS_GOLD | UIS_CENTER, false);
+		AddSText(0, 18, _("4TO TAM Y TE#R?"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 20, _("ZOZPOVATLCR"), UIS_SILVER | UIS_CENTER, true);
 	} else {
-		AddSText(0, 12, _("Talk to Wirt"), UIS_BLUE | UIS_CENTER, true);
-		AddSText(0, 18, _("Say goodbye"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 12, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+		AddSText(0, 18, _("ZOZPOVATLCR"), UIS_SILVER | UIS_CENTER, true);
 	}
 }
 
@@ -955,7 +955,7 @@ void S_StartBBoy()
 	else
 		AddSTextVal(10, boyitem._iIvalue + (boyitem._iIvalue / 2));
 	PrintStoreItem(&boyitem, 11, iclr);
-	AddSText(0, 22, _("Leave"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 22, _("Y&TN"), UIS_SILVER | UIS_CENTER, true);
 	OffsetSTextY(22, 6);
 }
 
@@ -976,12 +976,12 @@ void S_StartHealer()
 	HealPlayer();
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 1, _("Welcome to the"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 3, _("Healer's home"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 9, _("Would you like to:"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 12, _("Talk to Pepin"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 14, _("Buy items"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 16, _("Leave Healer's home"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 1, _("DO#PO ZO)KA/OBATL B"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 3, _("DOM QE/NTE/R"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 9, _("4TO XOTNTE?"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 12, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 14, _("KYZNTL ZPEDMETLI"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 16, _("ZOKNHYTL DOM QE/NTE/R"), UIS_SILVER | UIS_CENTER, true);
 	AddSLine(5);
 	storenumh = 20;
 }
@@ -1023,7 +1023,7 @@ void S_StartHBuy()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollHBuy(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, false);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, false);
 	OffsetSTextY(22, 6);
 
 	storenumh = 0;
@@ -1039,11 +1039,11 @@ void S_StartStory()
 {
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 2, _("The Town Elder"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 9, _("Would you like to:"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 12, _("Talk to Cain"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 14, _("Identify an item"), UIS_SILVER | UIS_CENTER, true);
-	AddSText(0, 18, _("Say goodbye"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 2, _("CTAPE&UNHA FOPODA"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 9, _("4TO XOTNTE?"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 12, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 14, _("PACZO3HATL ZPEDMET"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 18, _("ZOZPOVATLCR"), UIS_SILVER | UIS_CENTER, true);
 	AddSLine(5);
 }
 
@@ -1139,7 +1139,7 @@ void S_StartSIdentify()
 		AddSText(0, 1, tempstr, UIS_GOLD | UIS_CENTER, false);
 		AddSLine(3);
 		AddSLine(21);
-		AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 		OffsetSTextY(22, 6);
 		return;
 	}
@@ -1155,7 +1155,7 @@ void S_StartSIdentify()
 	AddSLine(3);
 	AddSLine(21);
 	S_ScrollSSell(stextsval);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 	OffsetSTextY(22, 6);
 }
 
@@ -1169,10 +1169,10 @@ void S_StartIdShow()
 
 	uint16_t iclr = item.getTextColorWithStatCheck();
 
-	AddSText(0, 7, _("This item is:"), UIS_SILVER | UIS_CENTER, false);
+	AddSText(0, 7, _("GTO:"), UIS_SILVER | UIS_CENTER, false);
 	AddSText(20, 11, item._iIName, iclr, false);
 	PrintStoreItem(&item, 12, iclr);
-	AddSText(0, 18, _("Done"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 18, _("XOPOUO"), UIS_SILVER | UIS_CENTER, true);
 }
 
 void S_StartTalk()
@@ -1187,10 +1187,10 @@ void S_StartTalk()
 	if (gbIsSpawn) {
 		strcpy(tempstr, fmt::format(_("Talking to {:s}"), TownerNames[talker]).c_str());
 		AddSText(0, 10, tempstr, UIS_SILVER | UIS_CENTER, false);
-		AddSText(0, 12, _("is not available"), UIS_SILVER | UIS_CENTER, false);
-		AddSText(0, 14, _("in the shareware"), UIS_SILVER | UIS_CENTER, false);
-		AddSText(0, 16, _("version"), UIS_SILVER | UIS_CENTER, false);
-		AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+		AddSText(0, 12, _("HEDOCTYZHO B"), UIS_SILVER | UIS_CENTER, false);
+		AddSText(0, 14, _("GTO& BEPCNN"), UIS_SILVER | UIS_CENTER, false);
+		AddSText(0, 16, _("NFPLI"), UIS_SILVER | UIS_CENTER, false);
+		AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 		return;
 	}
 
@@ -1216,19 +1216,19 @@ void S_StartTalk()
 			sn += la;
 		}
 	}
-	AddSText(0, sn2, _("Gossip"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 22, _("Back"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, sn2, _("C/YXN"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 22, _("HA3AD"), UIS_SILVER | UIS_CENTER, true);
 }
 
 void S_StartTavern()
 {
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 1, _("Welcome to the"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 3, _("Rising Sun"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 9, _("Would you like to:"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 12, _("Talk to Ogden"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 18, _("Leave the tavern"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 1, _("DO#PO ZO)KA/OBATL B"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 3, _("BOCXODRVEE CO/HQE"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 9, _("4TO XOTNTE?"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 12, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 18, _("ZOKNHYTL TABEPHY"), UIS_SILVER | UIS_CENTER, true);
 	AddSLine(5);
 	storenumh = 20;
 }
@@ -1237,10 +1237,10 @@ void S_StartBarMaid()
 {
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 2, "Gillian", UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 9, _("Would you like to:"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 12, _("Talk to Gillian"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 18, _("Say goodbye"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 2, "D)KN//NAH", UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 9, _("4TO XOTNTE?"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 12, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 18, _("ZOZPOVATLCR"), UIS_SILVER | UIS_CENTER, true);
 	AddSLine(5);
 	storenumh = 20;
 }
@@ -1249,10 +1249,10 @@ void S_StartDrunk()
 {
 	stextsize = false;
 	stextscrl = false;
-	AddSText(0, 2, _("Farnham the Drunk"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 9, _("Would you like to:"), UIS_GOLD | UIS_CENTER, false);
-	AddSText(0, 12, _("Talk to Farnham"), UIS_BLUE | UIS_CENTER, true);
-	AddSText(0, 18, _("Say Goodbye"), UIS_SILVER | UIS_CENTER, true);
+	AddSText(0, 2, _("ZLRHNQA (PAPHAM"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 9, _("4TO XOTNTE?"), UIS_GOLD | UIS_CENTER, false);
+	AddSText(0, 12, _("ZOFOBOPNTL"), UIS_BLUE | UIS_CENTER, true);
+	AddSText(0, 18, _("ZOZPOVATLCR"), UIS_SILVER | UIS_CENTER, true);
 	AddSLine(5);
 	storenumh = 20;
 }

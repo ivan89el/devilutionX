@@ -190,16 +190,16 @@ SDL_Rect PanBtnPos[8] = {
 	// clang-format on
 };
 /** Maps from panel_button_id to hotkey name. */
-const char *const PanBtnHotKey[8] = { "'c'", "'q'", N_("Tab"), N_("Esc"), "'i'", "'b'", N_("Enter"), nullptr };
+const char *const PanBtnHotKey[8] = { "'C'", "'&'", N_("TA#"), N_("ECK"), "'U'", "'N'", N_("EHTEP"), nullptr };
 /** Maps from panel_button_id to panel button description. */
 const char *const PanBtnStr[8] = {
-	N_("Character Information"),
-	N_("Quests log"),
-	N_("Automap"),
-	N_("Main Menu"),
-	N_("Inventory"),
-	N_("Spell book"),
-	N_("Send Message"),
+	N_("NH(POPMAQNR O ZEPCOHA)KE"),
+	N_("3ADAHNR"),
+	N_("KAPTA"),
+	N_("F/ABHOE MEHW"),
+	N_("NHBEHTAPL"),
+	N_("KHNFA 3AK/NHAHN&"),
+	N_("OTZPABNTL COO#VEHNE"),
 	"" // Player attack
 };
 /** Maps from attribute_id to the rectangle on screen used for attribute increment buttons. */
@@ -404,11 +404,11 @@ void DrawSpellList(const CelOutputBuffer &out)
 				case RSPLTYPE_SPELL:
 					strcpy(infostr, fmt::format(_("{:s} Spell"), _(spelldata[pSpell].sNameText)).c_str());
 					if (pSpell == SPL_HBOLT) {
-						strcpy(tempstr, _("Damages undead only"));
+						strcpy(tempstr, _("YPOH TO/LKO HE)KNTN"));
 						AddPanelString(tempstr);
 					}
 					if (s == 0)
-						strcpy(tempstr, _("Spell Level 0 - Unusable"));
+						strcpy(tempstr, _("YPOBEHL 3AK/NHAHNR 0"));
 					else
 						strcpy(tempstr, fmt::format(_("Spell Level {:d}"), s).c_str());
 					AddPanelString(tempstr);
@@ -921,7 +921,7 @@ void CheckPanelInfo()
 				strcpy(infostr, _(PanBtnStr[i]));
 			} else {
 				if (gbFriendlyMode)
-					strcpy(infostr, _("Player friendly"));
+					strcpy(infostr, _("NFPOK MNPO/W#NB"));
 				else
 					strcpy(infostr, _("Player attack"));
 			}
@@ -935,11 +935,11 @@ void CheckPanelInfo()
 		}
 	}
 	if (!spselflag && MouseX >= 565 + PANEL_LEFT && MouseX < 621 + PANEL_LEFT && MouseY >= 64 + PANEL_TOP && MouseY < 120 + PANEL_TOP) {
-		strcpy(infostr, _("Select current spell button"));
+		strcpy(infostr, _("BLI#EPNTE K/ABNUY 3AK/NHAHNR"));
 		infoclr = UIS_SILVER;
 		panelflag = true;
 		pinfoflag = true;
-		strcpy(tempstr, _("Hotkey: 's'"));
+		strcpy(tempstr, _("FOPR4AR K/ABNUA: 'LI'"));
 		AddPanelString(tempstr);
 		auto &myPlayer = plr[myplr];
 		spell_id v = myPlayer._pRSpell;
@@ -956,7 +956,7 @@ void CheckPanelInfo()
 				if (c < 0)
 					c = 0;
 				if (c == 0)
-					strcpy(tempstr, _("Spell Level 0 - Unusable"));
+					strcpy(tempstr, _("YPOBEHL 3AK/NHAHNR 0"));
 				else
 					strcpy(tempstr, fmt::format(_("Spell Level {:d}"), c).c_str());
 				AddPanelString(tempstr);
@@ -1135,7 +1135,7 @@ void DrawInfoBox(const CelOutputBuffer &out)
 			strcpy(infostr, fmt::format(ngettext("{:d} gold piece", "{:d} gold pieces", nGold), nGold).c_str());
 		} else if (!myPlayer.HoldItem._iStatFlag) {
 			ClearPanel();
-			AddPanelString(_("Requirements not met"));
+			AddPanelString(_("TPE#OBAHNR HE BLIZO/HEHLI"));
 			pinfoflag = true;
 		} else {
 			if (myPlayer.HoldItem._iIdentified)
@@ -1200,7 +1200,7 @@ void DrawChr(const CelOutputBuffer &out)
 	DrawString(out, chrstr, { 216, 69, 84, 0 }, UIS_SILVER | UIS_CENTER);
 
 	if (myPlayer._pLevel == MAXCHARLEVEL - 1) {
-		strcpy(chrstr, _("None"));
+		strcpy(chrstr, _("HET"));
 		style = UIS_GOLD;
 	} else {
 		sprintf(chrstr, "%i", myPlayer._pNextExper);
@@ -1267,7 +1267,7 @@ void DrawChr(const CelOutputBuffer &out)
 		sprintf(chrstr, "%i%%", myPlayer._pMagResist);
 	} else {
 		style = UIS_GOLD;
-		strcpy(chrstr, _(/* TRANSLATORS: UI Constrains. Keep translation short please!*/ "MAX"));
+		strcpy(chrstr, _(/* TRANSLATORS: UI Constrains. Keep translation short please!*/ "MAKC."));
 	}
 	DrawString(out, chrstr, { 257, 276, 43, 0 }, style | UIS_CENTER);
 
@@ -1278,7 +1278,7 @@ void DrawChr(const CelOutputBuffer &out)
 		sprintf(chrstr, "%i%%", myPlayer._pFireResist);
 	} else {
 		style = UIS_GOLD;
-		strcpy(chrstr, _("MAX"));
+		strcpy(chrstr, _("MAKC."));
 	}
 	DrawString(out, chrstr, { 257, 304, 43, 0 }, style | UIS_CENTER);
 
@@ -1289,7 +1289,7 @@ void DrawChr(const CelOutputBuffer &out)
 		sprintf(chrstr, "%i%%", myPlayer._pLghtResist);
 	} else {
 		style = UIS_GOLD;
-		strcpy(chrstr, _("MAX"));
+		strcpy(chrstr, _("MAKC."));
 	}
 	DrawString(out, chrstr, { 257, 332, 43, 0 }, style | UIS_CENTER);
 
@@ -1405,7 +1405,7 @@ void DrawLevelUpIcon(const CelOutputBuffer &out)
 {
 	if (stextflag == STORE_NONE) {
 		int nCel = lvlbtndown ? 3 : 2;
-		DrawString(out, _("Level Up"), { PANEL_LEFT + 0, PANEL_TOP - 49, 120, 0 }, UIS_SILVER | UIS_CENTER);
+		DrawString(out, _("HOB. YPOBEHL"), { PANEL_LEFT + 0, PANEL_TOP - 49, 120, 0 }, UIS_SILVER | UIS_CENTER);
 		CelDrawTo(out, { 40 + PANEL_X, -17 + PANEL_Y }, *pChrButtons, nCel);
 	}
 }
@@ -1631,7 +1631,7 @@ void DrawSpellBook(const CelOutputBuffer &out)
 			PrintSBookStr(out, { 10, yp - 23 }, _(spelldata[sn].sNameText));
 			switch (GetSBookTrans(sn, false)) {
 			case RSPLTYPE_SKILL:
-				strcpy(tempstr, _("Skill"));
+				strcpy(tempstr, _("HABLIK"));
 				break;
 			case RSPLTYPE_CHARGES: {
 				int charges = myPlayer.InvBody[INVLOC_HAND_LEFT]._iCharges;
@@ -1656,7 +1656,7 @@ void DrawSpellBook(const CelOutputBuffer &out)
 					lvl = 0;
 				}
 				if (lvl == 0) {
-					strcpy(tempstr, _("Spell Level 0 - Unusable"));
+					strcpy(tempstr, _("YPOBEHL 3AK/NHAHNR 0"));
 				} else {
 					strcpy(tempstr, fmt::format(_("Spell Level {:d}"), lvl).c_str());
 				}

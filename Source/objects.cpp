@@ -90,41 +90,41 @@ int byadd[8] = { -1, -1, -1, 0, 0, 1, 1, 1 };
 /** Maps from shrine_id to shrine name. */
 const char *const shrinestrs[] = {
 	// TRANSLATORS: Shrine Name Block
-	N_("Mysterious"),
-	N_("Hidden"),
-	N_("Gloomy"),
-	N_("Weird"),
-	N_("Magical"),
-	N_("Stone"),
-	N_("Religious"),
-	N_("Enchanted"),
-	N_("Thaumaturgic"),
-	N_("Fascinating"),
-	N_("Cryptic"),
-	N_("Magical"),
-	N_("Eldritch"),
-	N_("Eerie"),
-	N_("Divine"),
-	N_("Holy"),
-	N_("Sacred"),
-	N_("Spiritual"),
-	N_("Spooky"),
-	N_("Abandoned"),
-	N_("Creepy"),
-	N_("Quiet"),
-	N_("Secluded"),
-	N_("Ornate"),
-	N_("Glimmering"),
-	N_("Tainted"),
-	N_("Oily"),
-	N_("Glowing"),
-	N_("Mendicant's"),
-	N_("Sparkling"),
-	N_("Town"),
-	N_("Shimmering"),
-	N_("Solar"),
+	N_("MNCTN4ECKOE"),
+	N_("CKPLITOE"),
+	N_("MPA4HOE"),
+	N_("CTPAHHOE"),
+	N_("MAFN4ECKOE"),
+	N_("KAMEHHOE"),
+	N_("PE/NFNO3HOE"),
+	N_("3A4APOBAHHOE"),
+	N_("4YDOTBOPHOE"),
+	N_("3ABOPA)KNBAWVEE"),
+	N_("TA&HOE"),
+	N_("MAFN4ECKOE"),
+	N_(")KYTKOE"),
+	N_("3/OBEVEE"),
+	N_("#O)KECTBEHHOE"),
+	N_("CBRTOE"),
+	N_("TA&HOE"),
+	N_("DYXOBHOE"),
+	N_("ZPN3PA4HOE"),
+	N_("ZOKNHYTOE"),
+	N_("CTPAUHOE"),
+	N_("TNXOE"),
+	N_("YEDNHEHHOE"),
+	N_("YKPAUEHHOE"),
+	N_("MEPQAWVEE"),
+	N_("3AZRTHAHHOE"),
+	N_("MAC/RHNCTOE"),
+	N_("CNRWVEE"),
+	N_("ACKETN4HOE"),
+	N_("CBEPKAWVEE"),
+	N_("FOPODCKOE"),
+	N_("#/ECTRVEE"),
+	N_("CO/HE4HOE"),
 	// TRANSLATORS: Shrine Name Block end
-	N_("Murphy's"),
+	N_("N3MEH4NBOE"),
 };
 /** Specifies the minimum dungeon level on which each shrine will appear. */
 char shrinemin[] = {
@@ -254,22 +254,22 @@ shrine_gametype shrineavail[] = {
 };
 /** Maps from book_id to book name. */
 const char *const StoryBookName[] = {
-	N_(/* TRANSLATORS: Book Title */ "The Great Conflict"),
-	N_(/* TRANSLATORS: Book Title */ "The Wages of Sin are War"),
-	N_(/* TRANSLATORS: Book Title */ "The Tale of the Horadrim"),
-	N_(/* TRANSLATORS: Book Title */ "The Dark Exile"),
-	N_(/* TRANSLATORS: Book Title */ "The Sin War"),
-	N_(/* TRANSLATORS: Book Title */ "The Binding of the Three"),
-	N_(/* TRANSLATORS: Book Title */ "The Realms Beyond"),
-	N_(/* TRANSLATORS: Book Title */ "Tale of the Three"),
-	N_(/* TRANSLATORS: Book Title */ "The Black King"),
-	N_(/* TRANSLATORS: Book Title */ "Journal: The Ensorcellment"),
-	N_(/* TRANSLATORS: Book Title */ "Journal: The Meeting"),
-	N_(/* TRANSLATORS: Book Title */ "Journal: The Tirade"),
-	N_(/* TRANSLATORS: Book Title */ "Journal: His Power Grows"),
-	N_(/* TRANSLATORS: Book Title */ "Journal: NA-KRUL"),
-	N_(/* TRANSLATORS: Book Title */ "Journal: The End"),
-	N_(/* TRANSLATORS: Book Title */ "A Spellbook"),
+	N_(/* TRANSLATORS: Book Title */ "BE/NKN& KOH(P/NKT"),
+	N_(/* TRANSLATORS: Book Title */ "BO&HA ECTL ZPN4NHA FPEXA"),
+	N_(/* TRANSLATORS: Book Title */ "/EFEHDA O XOPADPNME"),
+	N_(/* TRANSLATORS: Book Title */ "N3FHAHNE TLMLI"),
+	N_(/* TRANSLATORS: Book Title */ "BO&HA FPEXA"),
+	N_(/* TRANSLATORS: Book Title */ "O ZONMKE N 3ATO4EHNN TPEX"),
+	N_(/* TRANSLATORS: Book Title */ "DA/LHNE QAPCTBA"),
+	N_(/* TRANSLATORS: Book Title */ "CKA3AHNE O TPEX"),
+	N_(/* TRANSLATORS: Book Title */ "4EPHLI& KOPO/L"),
+	N_(/* TRANSLATORS: Book Title */ ")KYPHA/ - 3AK/RTNE"),
+	N_(/* TRANSLATORS: Book Title */ ")KYPHA/ - BCTPE4A"),
+	N_(/* TRANSLATORS: Book Title */ ")KYPHA/ - CDE/KA"),
+	N_(/* TRANSLATORS: Book Title */ ")KYPHA/ - EFO CN/A PACTET"),
+	N_(/* TRANSLATORS: Book Title */ ")KYPHA/ - HA-KPY/"),
+	N_(/* TRANSLATORS: Book Title */ ")KYPHA/ - KOHEQ"),
+	N_(/* TRANSLATORS: Book Title */ "KHNFA 3AK/NHAHN&"),
 };
 /** Specifies the speech IDs of each dungeon type narrator book, for each player class. */
 _speech_id StoryText[3][3] = {
@@ -5436,11 +5436,11 @@ void GetObjectStr(int i)
 	case OBJ_CRUX1:
 	case OBJ_CRUX2:
 	case OBJ_CRUX3:
-		strcpy(infostr, _("Crucified Skeleton"));
+		strcpy(infostr, _("BNCRVN& CKE/ET"));
 		break;
 	case OBJ_LEVER:
 	case OBJ_FLAMELVR:
-		strcpy(infostr, _("Lever"));
+		strcpy(infostr, _("PLI4AF"));
 		break;
 	case OBJ_L1LDOOR:
 	case OBJ_L1RDOOR:
@@ -5449,58 +5449,58 @@ void GetObjectStr(int i)
 	case OBJ_L3LDOOR:
 	case OBJ_L3RDOOR:
 		if (object[i]._oVar4 == 1)
-			strcpy(infostr, _("Open Door"));
+			strcpy(infostr, _("OTKPLITAR DBEPL"));
 		if (object[i]._oVar4 == 0)
-			strcpy(infostr, _("Closed Door"));
+			strcpy(infostr, _("3AKPLITAR DBEPL"));
 		if (object[i]._oVar4 == 2)
-			strcpy(infostr, _("Blocked Door"));
+			strcpy(infostr, _("3A#/OKNPOBAHHAR DBEPL"));
 		break;
 	case OBJ_BOOK2L:
 		if (setlevel) {
 			if (setlvlnum == SL_BONECHAMB) {
-				strcpy(infostr, _("Ancient Tome"));
+				strcpy(infostr, _("DPEBHN& TOM"));
 			} else if (setlvlnum == SL_VILEBETRAYER) {
-				strcpy(infostr, _("Book of Vileness"));
+				strcpy(infostr, _("TOM 3/A"));
 			}
 		}
 		break;
 	case OBJ_SWITCHSKL:
-		strcpy(infostr, _("Skull Lever"));
+		strcpy(infostr, _("PLI4AF"));
 		break;
 	case OBJ_BOOK2R:
-		strcpy(infostr, _("Mythical Book"));
+		strcpy(infostr, _("MNCTN4ECKAR KHNFA"));
 		break;
 	case OBJ_CHEST1:
 	case OBJ_TCHEST1:
-		strcpy(infostr, _("Small Chest"));
+		strcpy(infostr, _("MA/LI& CYHDYK"));
 		break;
 	case OBJ_CHEST2:
 	case OBJ_TCHEST2:
-		strcpy(infostr, _("Chest"));
+		strcpy(infostr, _("CYHDYK"));
 		break;
 	case OBJ_CHEST3:
 	case OBJ_TCHEST3:
 	case OBJ_SIGNCHEST:
-		strcpy(infostr, _("Large Chest"));
+		strcpy(infostr, _("#O/LUO& CYHDYK"));
 		break;
 	case OBJ_SARC:
-		strcpy(infostr, _("Sarcophagus"));
+		strcpy(infostr, _("CAPKO(PAF"));
 		break;
 	case OBJ_BOOKSHELF:
-		strcpy(infostr, _("Bookshelf"));
+		strcpy(infostr, _("KHN)KHAR ZO/KA"));
 		break;
 	case OBJ_BOOKCASEL:
 	case OBJ_BOOKCASER:
-		strcpy(infostr, _("Bookcase"));
+		strcpy(infostr, _("KHN)KHLI& UKA(P"));
 		break;
 	case OBJ_BARREL:
 	case OBJ_BARRELEX:
 		if (currlevel >= 17 && currlevel <= 20)      // for hive levels
-			strcpy(infostr, _("Pod"));               //Then a barrel is called a pod
+			strcpy(infostr, _("KOKOH"));               //Then a barrel is called a pod
 		else if (currlevel >= 21 && currlevel <= 24) // for crypt levels
-			strcpy(infostr, _("Urn"));               //Then a barrel is called an urn
+			strcpy(infostr, _("YPHA"));               //Then a barrel is called an urn
 		else
-			strcpy(infostr, _("Barrel"));
+			strcpy(infostr, _("#O4KA"));
 		break;
 	case OBJ_SHRINEL:
 	case OBJ_SHRINER:
@@ -5508,65 +5508,65 @@ void GetObjectStr(int i)
 		strcpy(infostr, tempstr);
 		break;
 	case OBJ_SKELBOOK:
-		strcpy(infostr, _("Skeleton Tome"));
+		strcpy(infostr, _("TOM CKE/ETOB"));
 		break;
 	case OBJ_BOOKSTAND:
-		strcpy(infostr, _("Library Book"));
+		strcpy(infostr, _("KHNFA"));
 		break;
 	case OBJ_BLOODFTN:
-		strcpy(infostr, _("Blood Fountain"));
+		strcpy(infostr, _("(POHTAH KPOBN"));
 		break;
 	case OBJ_DECAP:
-		strcpy(infostr, _("Decapitated Body"));
+		strcpy(infostr, _("O#E3F/AB/EHHOE TE/O"));
 		break;
 	case OBJ_BLINDBOOK:
-		strcpy(infostr, _("Book of the Blind"));
+		strcpy(infostr, _("KHNFA C/EZLIX"));
 		break;
 	case OBJ_BLOODBOOK:
-		strcpy(infostr, _("Book of Blood"));
+		strcpy(infostr, _("KHNFA KPOBN"));
 		break;
 	case OBJ_PURIFYINGFTN:
-		strcpy(infostr, _("Purifying Spring"));
+		strcpy(infostr, _("4NCTAR KYZE/L"));
 		break;
 	case OBJ_ARMORSTAND:
 	case OBJ_WARARMOR:
-		strcpy(infostr, _("Armor"));
+		strcpy(infostr, _("DOCZEX"));
 		break;
 	case OBJ_WARWEAP:
-		strcpy(infostr, _("Weapon Rack"));
+		strcpy(infostr, _("CTO&KA D/R OPY)KNR"));
 		break;
 	case OBJ_GOATSHRINE:
-		strcpy(infostr, _("Goat Shrine"));
+		strcpy(infostr, _("POFATAR CBRTLIHR"));
 		break;
 	case OBJ_CAULDRON:
-		strcpy(infostr, _("Cauldron"));
+		strcpy(infostr, _("KOTE/"));
 		break;
 	case OBJ_MURKYFTN:
-		strcpy(infostr, _("Murky Pool"));
+		strcpy(infostr, _("MYTHLI& NCTO4HNK"));
 		break;
 	case OBJ_TEARFTN:
-		strcpy(infostr, _("Fountain of Tears"));
+		strcpy(infostr, _("(POHTAH C/S3"));
 		break;
 	case OBJ_STEELTOME:
-		strcpy(infostr, _("Steel Tome"));
+		strcpy(infostr, _("TOM CTA/N"));
 		break;
 	case OBJ_PEDISTAL:
-		strcpy(infostr, _("Pedestal of Blood"));
+		strcpy(infostr, _("ZLEDECTA/ KPOBN"));
 		break;
 	case OBJ_STORYBOOK:
 		strcpy(infostr, _(StoryBookName[object[i]._oVar3]));
 		break;
 	case OBJ_WEAPONRACK:
-		strcpy(infostr, _("Weapon Rack"));
+		strcpy(infostr, _("CTO&KA D/R OPY)KNR"));
 		break;
 	case OBJ_MUSHPATCH:
-		strcpy(infostr, _("Mushroom Patch"));
+		strcpy(infostr, _("ZOPOC/L FPN#OB"));
 		break;
 	case OBJ_LAZSTAND:
-		strcpy(infostr, _("Vile Stand"));
+		strcpy(infostr, _("CTO&KA 3/A"));
 		break;
 	case OBJ_SLAINHERO:
-		strcpy(infostr, _("Slain Hero"));
+		strcpy(infostr, _("ZOFN#UN& FEPO&"));
 		break;
 	default:
 		break;

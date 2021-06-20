@@ -223,7 +223,7 @@ void CheckTown()
 			    || (cursmx == missile[mx].position.tile.x && cursmy == missile[mx].position.tile.y)) {
 				trigflag = true;
 				ClearPanel();
-				strcpy(infostr, _("Town Portal"));
+				strcpy(infostr, _("FOPODCKO& ZOPTA/"));
 				strcpy(tempstr, fmt::format(_("from {:s}"), plr[missile[mx]._misource]._pName).c_str());
 				AddPanelString(tempstr);
 				cursmx = missile[mx].position.tile.x;
@@ -249,11 +249,11 @@ void CheckRportal()
 			    || (cursmx == missile[mx].position.tile.x && cursmy == missile[mx].position.tile.y)) {
 				trigflag = true;
 				ClearPanel();
-				strcpy(infostr, _("Portal to"));
+				strcpy(infostr, _("ZOPTA/"));
 				if (!setlevel)
-					strcpy(tempstr, _("The Unholy Altar"));
+					strcpy(tempstr, _("HE4ECTNBLI& A/TAPL"));
 				else
-					strcpy(tempstr, _("level 15"));
+					strcpy(tempstr, _("YPOBEHL 15"));
 				AddPanelString(tempstr);
 				cursmx = missile[mx].position.tile.x;
 				cursmy = missile[mx].position.tile.y;

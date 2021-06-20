@@ -156,10 +156,10 @@ int arrowdebug = 0;
 bool gbFriendlyMode = true;
 /** Default quick messages */
 const char *const spszMsgTbl[] = {
-	N_("I need help! Come Here!"),
-	N_("Follow me."),
-	N_("Here's something for you."),
-	N_("Now you DIE!")
+	N_("MHE HY)KHA ZOMOVL!"),
+	N_("NDN 3A MHO&."),
+	N_("3DECL KOE-4TO D/R TE#R."),
+	N_("CE&4AC TLI YMPEUL!")
 };
 /** INI files variable names for quick messages */
 const char *const spszMsgNameTbl[] = { "QuickMessage1", "QuickMessage2", "QuickMessage3", "QuickMessage4" };
@@ -2242,9 +2242,9 @@ void initKeymapActions()
 	    [] {
 		    char pszStr[120];
 		    const char *difficulties[3] = {
-			    _("Normal"),
-			    _("Nightmare"),
-			    _("Hell"),
+			    _("HOPMA"),
+			    _("KOUMAP"),
+			    _("AD"),
 		    };
 		    strcpy(pszStr, fmt::format(_(/* TRANSLATORS: {:s} means: Character Name, Game Version, Game Difficulty. */ "{:s}, version = {:s}, mode = {:s}"), gszProductName, PROJECT_VERSION, difficulties[sgGameInitInfo.nDifficulty]).c_str());
 		    NetSendCmdString(1 << myplr, pszStr);

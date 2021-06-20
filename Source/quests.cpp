@@ -40,30 +40,30 @@ int ReturnLvl;
 QuestData questlist[] = {
 	// clang-format off
 	// _qdlvl,  _qdmultlvl, _qlvlt,          _qdtype,     _qdrnd, _qslvl,          isSinglePlayerOnly, _qdmsg,        _qlstr
-	{       5,          -1, DTYPE_NONE,      Q_ROCK,      100,    SL_NONE,         true,               TEXT_INFRA5,   N_( /* TRANSLATORS: Quest Name Block */ "The Magic Rock")           },
-	{       9,          -1, DTYPE_NONE,      Q_MUSHROOM,  100,    SL_NONE,         true,               TEXT_MUSH8,    N_("Black Mushroom")           },
-	{       4,          -1, DTYPE_NONE,      Q_GARBUD,    100,    SL_NONE,         true,               TEXT_GARBUD1,  N_("Gharbad The Weak")         },
-	{       8,          -1, DTYPE_NONE,      Q_ZHAR,      100,    SL_NONE,         true,               TEXT_ZHAR1,    N_("Zhar the Mad")             },
-	{      14,          -1, DTYPE_NONE,      Q_VEIL,      100,    SL_NONE,         true,               TEXT_VEIL9,    "Lachdanan"                    },
-	{      15,          -1, DTYPE_NONE,      Q_DIABLO,    100,    SL_NONE,         false,              TEXT_VILE3,    "Diablo"                       },
-	{       2,           2, DTYPE_NONE,      Q_BUTCHER,   100,    SL_NONE,         false,              TEXT_BUTCH9,   N_("The Butcher")              },
-	{       4,          -1, DTYPE_NONE,      Q_LTBANNER,  100,    SL_NONE,         true,               TEXT_BANNER2,  N_("Ogden's Sign")             },
-	{       7,          -1, DTYPE_NONE,      Q_BLIND,     100,    SL_NONE,         true,               TEXT_BLINDING, N_("Halls of the Blind")       },
-	{       5,          -1, DTYPE_NONE,      Q_BLOOD,     100,    SL_NONE,         true,               TEXT_BLOODY,   N_("Valor")                    },
-	{      10,          -1, DTYPE_NONE,      Q_ANVIL,     100,    SL_NONE,         true,               TEXT_ANVIL5,   N_("Anvil of Fury")            },
-	{      13,          -1, DTYPE_NONE,      Q_WARLORD,   100,    SL_NONE,         true,               TEXT_BLOODWAR, N_("Warlord of Blood")         },
-	{       3,           3, DTYPE_CATHEDRAL, Q_SKELKING,  100,    SL_SKELKING,     false,              TEXT_KING2,    N_("The Curse of King Leoric") },
-	{       2,          -1, DTYPE_CAVES,     Q_PWATER,    100,    SL_POISONWATER,  true,               TEXT_POISON3,  N_("Poisoned Water Supply")    },
-	{       6,          -1, DTYPE_CATACOMBS, Q_SCHAMB,    100,    SL_BONECHAMB,    true,               TEXT_BONER,    N_("The Chamber of Bone")      },
-	{      15,          15, DTYPE_CATHEDRAL, Q_BETRAYER,  100,    SL_VILEBETRAYER, false,              TEXT_VILE1,    N_("Archbishop Lazarus")       },
-	{      17,          17, DTYPE_NONE,      Q_GRAVE,     100,    SL_NONE,         false,              TEXT_GRAVE7,   N_("Grave Matters")            },
-	{      9,            9, DTYPE_NONE,      Q_FARMER,    100,    SL_NONE,         false,              TEXT_FARMER1,  N_("Farmer's Orchard")         },
-	{      17,          -1, DTYPE_NONE,      Q_GIRL,      100,    SL_NONE,         true,               TEXT_GIRL2,    N_("Little Girl")              },
-	{      19,          -1, DTYPE_NONE,      Q_TRADER,    100,    SL_NONE,         true,               TEXT_TRADER,   N_("Wandering Trader")         },
-	{      17,          17, DTYPE_NONE,      Q_DEFILER,   100,    SL_NONE,         false,              TEXT_DEFILER1, N_("The Defiler")              },
-	{      21,          21, DTYPE_NONE,      Q_NAKRUL,    100,    SL_NONE,         false,              TEXT_NAKRUL1,  "Na-Krul"                      },
-	{      21,          -1, DTYPE_NONE,      Q_CORNSTN,   100,    SL_NONE,         true,               TEXT_CORNSTN,  N_("Cornerstone of the World") },
-	{       9,           9, DTYPE_NONE,      Q_JERSEY,    100,    SL_NONE,         false,              TEXT_JERSEY4,  N_( /* TRANSLATORS: Quest Name Block end*/ "The Jersey's Jersey")      },
+	{       5,          -1, DTYPE_NONE,      Q_ROCK,      100,    SL_NONE,         true,               TEXT_INFRA5,   N_( /* TRANSLATORS: Quest Name Block */ "KAMEHL MAFNN")           },
+	{       9,          -1, DTYPE_NONE,      Q_MUSHROOM,  100,    SL_NONE,         true,               TEXT_MUSH8,    N_("4EPHLI& FPN#")           },
+	{       4,          -1, DTYPE_NONE,      Q_GARBUD,    100,    SL_NONE,         true,               TEXT_GARBUD1,  N_("FAP#AD C/A#LI&")         },
+	{       8,          -1, DTYPE_NONE,      Q_ZHAR,      100,    SL_NONE,         true,               TEXT_ZHAR1,    N_("3AP #E3YMEQ")             },
+	{      14,          -1, DTYPE_NONE,      Q_VEIL,      100,    SL_NONE,         true,               TEXT_VEIL9,    "/AKDAHAH"                    },
+	{      15,          -1, DTYPE_NONE,      Q_DIABLO,    100,    SL_NONE,         false,              TEXT_VILE3,    "DNA#/O"                       },
+	{       2,           2, DTYPE_NONE,      Q_BUTCHER,   100,    SL_NONE,         false,              TEXT_BUTCH9,   N_("MRCHNK")              },
+	{       4,          -1, DTYPE_NONE,      Q_LTBANNER,  100,    SL_NONE,         true,               TEXT_BANNER2,  N_("BLIBECKA OFDEHA")             },
+	{       7,          -1, DTYPE_NONE,      Q_BLIND,     100,    SL_NONE,         true,               TEXT_BLINDING, N_("3A/LI C/EZLIX")       },
+	{       5,          -1, DTYPE_NONE,      Q_BLOOD,     100,    SL_NONE,         true,               TEXT_BLOODY,   N_("DO#/ECTL")                    },
+	{      10,          -1, DTYPE_NONE,      Q_ANVIL,     100,    SL_NONE,         true,               TEXT_ANVIL5,   N_("HAKOBA/LHR RPOCTN")            },
+	{      13,          -1, DTYPE_NONE,      Q_WARLORD,   100,    SL_NONE,         true,               TEXT_BLOODWAR, N_("BOEHA4A/LHNK KPOBN")         },
+	{       3,           3, DTYPE_CATHEDRAL, Q_SKELKING,  100,    SL_SKELKING,     false,              TEXT_KING2,    N_("ZPOK/RTNE KOPO/R /EOPNKA") },
+	{       2,          -1, DTYPE_CAVES,     Q_PWATER,    100,    SL_POISONWATER,  true,               TEXT_POISON3,  N_("OTPAB/EHHLI& NCTO4HNK")    },
+	{       6,          -1, DTYPE_CATACOMBS, Q_SCHAMB,    100,    SL_BONECHAMB,    true,               TEXT_BONER,    N_("3A/ KOCTE&")      },
+	{      15,          15, DTYPE_CATHEDRAL, Q_BETRAYER,  100,    SL_VILEBETRAYER, false,              TEXT_VILE1,    N_("APXNEZNCKOZ /A3APL")       },
+	{      17,          17, DTYPE_NONE,      Q_GRAVE,     100,    SL_NONE,         false,              TEXT_GRAVE7,   N_("FPO#HNQA KOPO/R")            },
+	{      9,            9, DTYPE_NONE,      Q_FARMER,    100,    SL_NONE,         false,              TEXT_FARMER1,  N_("(PEPMEP")         },
+	{      17,          -1, DTYPE_NONE,      Q_GIRL,      100,    SL_NONE,         true,               TEXT_GIRL2,    N_("NFPYUKA QE/NN")              },
+	{      19,          -1, DTYPE_NONE,      Q_TRADER,    100,    SL_NONE,         true,               TEXT_TRADER,   N_("CTPAHCTBYWVN& TOPFOBEQ")         },
+	{      17,          17, DTYPE_NONE,      Q_DEFILER,   100,    SL_NONE,         false,              TEXT_DEFILER1, N_("OCKBEPHNTE/L")              },
+	{      21,          21, DTYPE_NONE,      Q_NAKRUL,    100,    SL_NONE,         false,              TEXT_NAKRUL1,  "HA-KPY/"                      },
+	{      21,          -1, DTYPE_NONE,      Q_CORNSTN,   100,    SL_NONE,         true,               TEXT_CORNSTN,  N_("KPAEYFO/LHLI& KAMEHL MNPA") },
+	{       9,           9, DTYPE_NONE,      Q_JERSEY,    100,    SL_NONE,         false,              TEXT_JERSEY4,  N_( /* TRANSLATORS: Quest Name Block end*/ "D)KEPCN D)KEPCN")      },
 	// clang-format on
 };
 /**
@@ -77,11 +77,11 @@ char questxoff[7] = { 0, -1, 0, -1, -2, -1, -2 };
  */
 char questyoff[7] = { 0, 0, -1, -1, -1, -2, -2 };
 const char *const questtrigstr[5] = {
-	N_(/* TRANSLATORS: Quest Map*/ "King Leoric's Tomb"),
-	N_(/* TRANSLATORS: Quest Map*/ "The Chamber of Bone"),
-	N_(/* TRANSLATORS: Quest Map*/ "Maze"),
-	N_(/* TRANSLATORS: Quest Map*/ "A Dark Passage"),
-	N_(/* TRANSLATORS: Quest Map*/ "Unholy Altar")
+	N_(/* TRANSLATORS: Quest Map*/ "FPO#HNQA KOPO/R /EOPNKA"),
+	N_(/* TRANSLATORS: Quest Map*/ "3A/ KOCTE&"),
+	N_(/* TRANSLATORS: Quest Map*/ "/A#NPNHT"),
+	N_(/* TRANSLATORS: Quest Map*/ "TEMHLI& ZPOXOD"),
+	N_(/* TRANSLATORS: Quest Map*/ "HE4ECTNBLI& A/TAPL")
 };
 /**
  * A quest group containing the three quests the Butcher,
@@ -327,7 +327,7 @@ void CheckQuestKill(int m, bool sendmsg)
 	} else if (monster[m]._uniqtype - 1 == UMT_GARBUD) { //"Gharbad the Weak"
 		quests[Q_GARBUD]._qactive = QUEST_DONE;
 		plr[myplr].Say(HeroSpeech::ImNotImpressed, 30);
-	} else if (monster[m]._uniqtype - 1 == UMT_ZHAR) { //"Zhar the Mad"
+	} else if (monster[m]._uniqtype - 1 == UMT_ZHAR) { //"3AP #E3YMEQ"
 		quests[Q_ZHAR]._qactive = QUEST_DONE;
 		plr[myplr].Say(HeroSpeech::ImSorryDidIBreakYourConcentration, 30);
 	} else if (monster[m]._uniqtype - 1 == UMT_LAZURUS && gbIsMultiplayer) { //"Arch-Bishop Lazarus"
@@ -357,7 +357,7 @@ void CheckQuestKill(int m, bool sendmsg)
 		quests[Q_DIABLO]._qactive = QUEST_ACTIVE;
 		AddMissile(35, 32, 35, 32, 0, MIS_RPORTAL, TARGET_MONSTERS, myplr, 0, 0);
 		plr[myplr].Say(HeroSpeech::YourMadnessEndsHereBetrayer, 30);
-	} else if (monster[m]._uniqtype - 1 == UMT_WARLORD) { //"Warlord of Blood"
+	} else if (monster[m]._uniqtype - 1 == UMT_WARLORD) { //"BOEHA4A/LHNK KPOBN"
 		quests[Q_WARLORD]._qactive = QUEST_DONE;
 		plr[myplr].Say(HeroSpeech::YourReignOfPainHasEnded, 30);
 	}
@@ -728,14 +728,14 @@ static void PrintQLString(const CelOutputBuffer &out, int x, int line, const cha
 
 void DrawQuestLog(const CelOutputBuffer &out)
 {
-	DrawString(out, _("Quest Log"), { 32, 44, 257, 0 }, UIS_CENTER);
+	DrawString(out, _("3ADAHNR"), { 32, 44, 257, 0 }, UIS_CENTER);
 	CelDrawTo(out, { 0, 351 }, *pQLogCel, 1);
 	int line = qtopline;
 	for (int i = 0; i < numqlines; i++) {
 		PrintQLString(out, 32, line, _(questlist[qlist[i]]._qlstr));
 		line += 2;
 	}
-	PrintQLString(out, 32, 22, _("Close Quest Log"));
+	PrintQLString(out, 32, 22, _("3AKPLITL )KYPHA/"));
 }
 
 void StartQuestlog()

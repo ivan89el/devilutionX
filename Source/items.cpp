@@ -67,16 +67,16 @@ item_misc_id OilMagic[] = {
 	IMISC_OILIMP,
 };
 char OilNames[10][25] = {
-	N_("Oil of Accuracy"),
-	N_("Oil of Mastery"),
-	N_("Oil of Sharpness"),
-	N_("Oil of Death"),
-	N_("Oil of Skill"),
-	N_("Blacksmith Oil"),
-	N_("Oil of Fortitude"),
-	N_("Oil of Permanence"),
-	N_("Oil of Hardening"),
-	N_("Oil of Imperviousness")
+	N_("MAC/O TO4HOCTN"),
+	N_("MAC/O MACTEPA"),
+	N_("MAC/O OCTPOTLI"),
+	N_("MAC/O ZA/A4A"),
+	N_("MAC/O YMEHNR"),
+	N_("MAC/O KY3HEQA"),
+	N_("MAC/O CTO&KOCTN"),
+	N_("MAC/O DO/FOBE4H."),
+	N_("MAC/O 3AKA/KN"),
+	N_("MAC/O HEZPOHNQAEMOCTN")
 };
 int MaxGold = GOLD_MAX_LIMIT;
 
@@ -3236,145 +3236,145 @@ void PrintItemOil(char IDidx)
 {
 	switch (IDidx) {
 	case IMISC_OILACC:
-		strcpy(tempstr, _("increases a weapon's"));
+		strcpy(tempstr, _("ZOBLIUAET Y OPY)KNR"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("chance to hit"));
+		strcpy(tempstr, _("TO4HOCTL"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILMAST:
-		strcpy(tempstr, _("greatly increases a"));
+		strcpy(tempstr, _("CN/LHO ZOBLIUAET"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("weapon's chance to hit"));
+		strcpy(tempstr, _("TO4HOCTL"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILSHARP:
-		strcpy(tempstr, _("increases a weapon's"));
+		strcpy(tempstr, _("ZOBLIUAET Y OPY)KNR"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("damage potential"));
+		strcpy(tempstr, _("MAKCNMA/LHLI& YPOH"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILDEATH:
-		strcpy(tempstr, _("greatly increases a weapon's"));
+		strcpy(tempstr, _("CN/LHO ZOBLIUAET"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("damage potential - not bows"));
+		strcpy(tempstr, _("MAKCNMA/LHLI& YPOH - not bows"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILSKILL:
-		strcpy(tempstr, _("reduces attributes needed"));
+		strcpy(tempstr, _("CHN)KAET TPE#OBAHNR"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("to use armor or weapons"));
+		strcpy(tempstr, _("K OPY)KNW N/N DOCZEXY"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILBSMTH:
-		/*xgettext:no-c-format*/ strcpy(tempstr, _("restores 20% of an"));
+		/*xgettext:no-c-format*/ strcpy(tempstr, _("BOCCTAHAB/NBAET 20%"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("item's durability"));
+		strcpy(tempstr, _("ZPO4HOCTN ZPEDMETA"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILFORT:
-		strcpy(tempstr, _("increases an item's"));
+		strcpy(tempstr, _("ZOBLIUAET Y ZPEDMETA"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("current and max durability"));
+		strcpy(tempstr, _("TEKYVYW N MAKC. ZPO4HOCTL"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILPERM:
-		strcpy(tempstr, _("makes an item indestructible"));
+		strcpy(tempstr, _("DE/AET ZPEDMET HEPA3PYUNMLIM"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILHARD:
-		strcpy(tempstr, _("increases the armor class"));
+		strcpy(tempstr, _("ZOBLIUAET K/ACC #POHN"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("of armor and shields"));
+		strcpy(tempstr, _("DOCZEXA N/N VNTA"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OILIMP:
-		strcpy(tempstr, _("greatly increases the armor"));
+		strcpy(tempstr, _("CN/LHO ZOBLIUAET K/ACC #POHN"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("class of armor and shields"));
+		strcpy(tempstr, _("DOCZEXA N/N VNTA"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_RUNEF:
-		strcpy(tempstr, _("sets fire trap"));
+		strcpy(tempstr, _("CO3DAET /OBYUKY C OFHEM"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_RUNEL:
-		strcpy(tempstr, _("sets lightning trap"));
+		strcpy(tempstr, _("CO3DAET /OBYUKY C MO/HNE&"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_GR_RUNEL:
-		strcpy(tempstr, _("sets lightning trap"));
+		strcpy(tempstr, _("CO3DAET /OBYUKY C MO/HNE&"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_GR_RUNEF:
-		strcpy(tempstr, _("sets fire trap"));
+		strcpy(tempstr, _("CO3DAET /OBYUKY C OFHEM"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_RUNES:
-		strcpy(tempstr, _("sets petrification trap"));
+		strcpy(tempstr, _("CO3DAET /OBYUKY OKAMEHEHNR"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_FULLHEAL:
-		strcpy(tempstr, _("fully recover life"));
+		strcpy(tempstr, _("ZO/HOCTLW BOCZO/HRET 3DOPOBLE"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_HEAL:
-		strcpy(tempstr, _("recover partial life"));
+		strcpy(tempstr, _("4ACTN4HO BOCZO/HRET 3DOPOBLE"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_OLDHEAL:
-		strcpy(tempstr, _("recover life"));
+		strcpy(tempstr, _("BOCZO/HRET 3DOPOBLE"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_DEADHEAL:
-		strcpy(tempstr, _("deadly heal"));
+		strcpy(tempstr, _("HE4ECTNBOE NCQE/EHNE"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_MANA:
-		strcpy(tempstr, _("recover mana"));
+		strcpy(tempstr, _("BOCZO/HRET MAHY"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_FULLMANA:
-		strcpy(tempstr, _("fully recover mana"));
+		strcpy(tempstr, _("ZO/HOCTLW BOCZO/HRET MAHY"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXSTR:
-		strcpy(tempstr, _("increase strength"));
+		strcpy(tempstr, _("ZOBLIUAET CN/Y"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXMAG:
-		strcpy(tempstr, _("increase magic"));
+		strcpy(tempstr, _("ZOBLIUAET MAFNW"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXDEX:
-		strcpy(tempstr, _("increase dexterity"));
+		strcpy(tempstr, _("ZOBLIUAET /OBKOCTL"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXVIT:
-		strcpy(tempstr, _("increase vitality"));
+		strcpy(tempstr, _("ZOBLIUAET )KNBY4ECTL"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXWEAK:
-		strcpy(tempstr, _("decrease strength"));
+		strcpy(tempstr, _("CHN)KAET CN/Y"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXDIS:
-		strcpy(tempstr, _("decrease strength"));
+		strcpy(tempstr, _("CHN)KAET CN/Y"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXCLUM:
-		strcpy(tempstr, _("decrease dexterity"));
+		strcpy(tempstr, _("CHN)KAET /OBKOCTL"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_ELIXSICK:
-		strcpy(tempstr, _("decrease vitality"));
+		strcpy(tempstr, _("CHN)KAET )KNBY4ECTL"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_REJUV:
-		strcpy(tempstr, _("recover life and mana"));
+		strcpy(tempstr, _("BOCZO/HRET 3DOPOBLE N MAHY"));
 		AddPanelString(tempstr);
 		break;
 	case IMISC_FULLREJUV:
-		strcpy(tempstr, _("fully recover life and mana"));
+		strcpy(tempstr, _("BOCZO/HRET BCE 3DOPOBLE N MAHY"));
 		AddPanelString(tempstr);
 		break;
 	}
@@ -3439,10 +3439,10 @@ void PrintItemPower(char plidx, ItemStruct *x)
 		else if (x->_iSplLvlAdd < 0)
 			strcpy(tempstr, fmt::format(ngettext("spells are decreased {:d} level", "spells are decreased {:d} levels", -x->_iSplLvlAdd), -x->_iSplLvlAdd).c_str());
 		else if (x->_iSplLvlAdd == 0)
-			strcpy(tempstr, _("spell levels unchanged (?)"));
+			strcpy(tempstr, _("YPOBHN 3AK/NHAHN& HE N3MEHN/NCL (?)"));
 		break;
 	case IPL_CHARGES:
-		strcpy(tempstr, _("Extra charges"));
+		strcpy(tempstr, _("DOZ. 3APRDLI"));
 		break;
 	case IPL_SPELL:
 		strcpy(tempstr, fmt::format(ngettext("{:d} {:s} charge", "{:d} {:s} charges", x->_iMaxCharges), x->_iMaxCharges, _(spelldata[x->_iSpell].sNameText)).c_str());
@@ -3492,13 +3492,13 @@ void PrintItemPower(char plidx, ItemStruct *x)
 		strcpy(tempstr, fmt::format(_("Mana: {:+d}"), x->_iPLMana >> 6).c_str());
 		break;
 	case IPL_DUR:
-		strcpy(tempstr, _("high durability"));
+		strcpy(tempstr, _("ZOBLIUEHHAR ZPO4HOCTL"));
 		break;
 	case IPL_DUR_CURSE:
-		strcpy(tempstr, _("decreased durability"));
+		strcpy(tempstr, _("ZOHN)KEHHAR ZPO4HOCTL"));
 		break;
 	case IPL_INDESTRUCTIBLE:
-		strcpy(tempstr, _("indestructible"));
+		strcpy(tempstr, _("HEPA3PYUNM."));
 		break;
 	case IPL_LIGHT:
 		/*xgettext:no-c-format*/ strcpy(tempstr, fmt::format(_("+{:d}% light radius"), 10 * x->_iPLLight).c_str());
@@ -3507,7 +3507,7 @@ void PrintItemPower(char plidx, ItemStruct *x)
 		/*xgettext:no-c-format*/ strcpy(tempstr, fmt::format(_("-{:d}% light radius"), -10 * x->_iPLLight).c_str());
 		break;
 	case IPL_MULT_ARROWS:
-		strcpy(tempstr, _("multiple arrows per shot"));
+		strcpy(tempstr, _("TPO&HO& BLICTPE/"));
 		break;
 	case IPL_FIRE_ARROWS:
 		if (x->_iFMinDam == x->_iFMaxDam)
@@ -3528,94 +3528,94 @@ void PrintItemPower(char plidx, ItemStruct *x)
 			strcpy(tempstr, fmt::format(_("fireball damage: {:d}-{:d}"), x->_iFMinDam, x->_iFMaxDam).c_str());
 		break;
 	case IPL_THORNS:
-		strcpy(tempstr, _("attacker takes 1-3 damage"));
+		strcpy(tempstr, _("ATAKYWVN& ZO/Y4AET 1-3 YPOHA"));
 		break;
 	case IPL_NOMANA:
-		strcpy(tempstr, _("user loses all mana"));
+		strcpy(tempstr, _("OTHNMAET BCW MAHY"));
 		break;
 	case IPL_NOHEALPLR:
-		strcpy(tempstr, _("you can't heal"));
+		strcpy(tempstr, _("BLI HE MO)KETE /E4NTLCR"));
 		break;
 	case IPL_ABSHALFTRAP:
-		strcpy(tempstr, _("absorbs half of trap damage"));
+		strcpy(tempstr, _("ZOF/OVAET 50% ZOBPE)KDEHN& OT /OBYUEK"));
 		break;
 	case IPL_KNOCKBACK:
-		strcpy(tempstr, _("knocks target back"));
+		strcpy(tempstr, _("OT#PACLIBAET BPAFA"));
 		break;
 	case IPL_3XDAMVDEM:
-		/*xgettext:no-c-format*/ strcpy(tempstr, _("+200% damage vs. demons"));
+		/*xgettext:no-c-format*/ strcpy(tempstr, _("+200% YPOHA ZPOTNB DEMOHOB"));
 		break;
 	case IPL_ALLRESZERO:
-		strcpy(tempstr, _("All Resistance equals 0"));
+		strcpy(tempstr, _("OTHNMAET BCE COZPOTNB/EHNR"));
 		break;
 	case IPL_NOHEALMON:
-		strcpy(tempstr, _("hit monster doesn't heal"));
+		strcpy(tempstr, _("QE/L HE MO)KET /E4NTLCR"));
 		break;
 	case IPL_STEALMANA:
 		if ((x->_iFlags & ISPL_STEALMANA_3) != 0)
-			/*xgettext:no-c-format*/ strcpy(tempstr, _("hit steals 3% mana"));
+			/*xgettext:no-c-format*/ strcpy(tempstr, _("ZOXNVAET 3% MAHLI"));
 		if ((x->_iFlags & ISPL_STEALMANA_5) != 0)
-			/*xgettext:no-c-format*/ strcpy(tempstr, _("hit steals 5% mana"));
+			/*xgettext:no-c-format*/ strcpy(tempstr, _("ZOXNVAET 5% MAHLI"));
 		break;
 	case IPL_STEALLIFE:
 		if ((x->_iFlags & ISPL_STEALLIFE_3) != 0)
-			/*xgettext:no-c-format*/ strcpy(tempstr, _("hit steals 3% life"));
+			/*xgettext:no-c-format*/ strcpy(tempstr, _("ZOXNVAET 3% 3DOPOBLR"));
 		if ((x->_iFlags & ISPL_STEALLIFE_5) != 0)
-			/*xgettext:no-c-format*/ strcpy(tempstr, _("hit steals 5% life"));
+			/*xgettext:no-c-format*/ strcpy(tempstr, _("ZOXNVAET 5% 3DOPOBLR"));
 		break;
 	case IPL_TARGAC:
-		strcpy(tempstr, _("penetrates target's armor"));
+		strcpy(tempstr, _("ZPO#NBAET DOCZEX BPAFA"));
 		break;
 	case IPL_FASTATTACK:
 		if ((x->_iFlags & ISPL_QUICKATTACK) != 0)
-			strcpy(tempstr, _("quick attack"));
+			strcpy(tempstr, _("ZPOBOPHAR ATAKA"));
 		if ((x->_iFlags & ISPL_FASTATTACK) != 0)
-			strcpy(tempstr, _("fast attack"));
+			strcpy(tempstr, _("#LICTPAR ATAKA"));
 		if ((x->_iFlags & ISPL_FASTERATTACK) != 0)
-			strcpy(tempstr, _("faster attack"));
+			strcpy(tempstr, _("#LICTPE&UAR ATAKA"));
 		if ((x->_iFlags & ISPL_FASTESTATTACK) != 0)
-			strcpy(tempstr, _("fastest attack"));
+			strcpy(tempstr, _("HAN#LICTPE&UAR ATAKA"));
 		break;
 	case IPL_FASTRECOVER:
 		if ((x->_iFlags & ISPL_FASTRECOVER) != 0)
-			strcpy(tempstr, _("fast hit recovery"));
+			strcpy(tempstr, _("#LICTPOE BOCCT. OT YDAPA"));
 		if ((x->_iFlags & ISPL_FASTERRECOVER) != 0)
-			strcpy(tempstr, _("faster hit recovery"));
+			strcpy(tempstr, _("#LICTPE&UEE BOCCT. OT YDAPA"));
 		if ((x->_iFlags & ISPL_FASTESTRECOVER) != 0)
-			strcpy(tempstr, _("fastest hit recovery"));
+			strcpy(tempstr, _("HAN#LICTPE&UEE BOCCT. OT YDAPA"));
 		break;
 	case IPL_FASTBLOCK:
-		strcpy(tempstr, _("fast block"));
+		strcpy(tempstr, _("#LICTPLI& #/OK"));
 		break;
 	case IPL_DAMMOD:
 		strcpy(tempstr, fmt::format(ngettext("adds {:d} point to damage", "adds {:d} points to damage", x->_iPLDamMod), x->_iPLDamMod).c_str());
 		break;
 	case IPL_RNDARROWVEL:
-		strcpy(tempstr, _("fires random speed arrows"));
+		strcpy(tempstr, _("BLICTPE/NBAET C/Y4A&HLIMN CTPE/AMN"));
 		break;
 	case IPL_SETDAM:
-		strcpy(tempstr, _("unusual item damage"));
+		strcpy(tempstr, _("#O/LUO& YPOH"));
 		break;
 	case IPL_SETDUR:
-		strcpy(tempstr, _("altered durability"));
+		strcpy(tempstr, _("HN3KAR ZPO4HOCTL"));
 		break;
 	case IPL_FASTSWING:
-		strcpy(tempstr, _("Faster attack swing"));
+		strcpy(tempstr, _("#LICTPE&UN& B3MAX"));
 		break;
 	case IPL_ONEHAND:
-		strcpy(tempstr, _("one handed sword"));
+		strcpy(tempstr, _("ODHOPY4HOE OPY)KNE"));
 		break;
 	case IPL_DRAINLIFE:
-		strcpy(tempstr, _("constantly lose hit points"));
+		strcpy(tempstr, _("ZOCTORHHAR ZOTEPR 3DOPOBLR"));
 		break;
 	case IPL_RNDSTEALLIFE:
-		strcpy(tempstr, _("life stealing"));
+		strcpy(tempstr, _("ZOXNVAET 3DOPOBLE BPAFA"));
 		break;
 	case IPL_NOMINSTR:
-		strcpy(tempstr, _("no strength requirement"));
+		strcpy(tempstr, _("HE TPE#YET CN/LI"));
 		break;
 	case IPL_INFRAVISION:
-		strcpy(tempstr, _("see with infravision"));
+		strcpy(tempstr, _("DAET NH(PPA3PEHNE"));
 		break;
 	case IPL_INVCURS:
 		strcpy(tempstr, " ");
@@ -3627,7 +3627,7 @@ void PrintItemPower(char plidx, ItemStruct *x)
 			strcpy(tempstr, fmt::format(_("lightning damage: {:d}-{:d}"), x->_iFMinDam, x->_iFMaxDam).c_str());
 		break;
 	case IPL_ADDMANAAC:
-		strcpy(tempstr, _("charged bolts on hits"));
+		strcpy(tempstr, _("3APRDOB HA YDAP"));
 		break;
 	case IPL_FIRERESCLVL:
 		if (x->_iPLFR <= 0)
@@ -3636,16 +3636,16 @@ void PrintItemPower(char plidx, ItemStruct *x)
 			strcpy(tempstr, fmt::format(_("Resist Fire: {:+d}%"), x->_iPLFR).c_str());
 		break;
 	case IPL_DEVASTATION:
-		strcpy(tempstr, _("occasional triple damage"));
+		strcpy(tempstr, _("UAHC HAHECTN 300% YPOHA"));
 		break;
 	case IPL_DECAY:
 		strcpy(tempstr, fmt::format(_("decaying {:+d}% damage"), x->_iPLDam).c_str());
 		break;
 	case IPL_PERIL:
-		strcpy(tempstr, _("2x dmg to monst, 1x to you"));
+		strcpy(tempstr, _("2x YPOH BPAFY, 1x CE#E"));
 		break;
 	case IPL_JESTERS:
-		/*xgettext:no-c-format*/ strcpy(tempstr, _("Random 0 - 500% damage"));
+		/*xgettext:no-c-format*/ strcpy(tempstr, _("0 - 500% C/Y4A&HOFO YPOHA"));
 		break;
 	case IPL_CRYSTALLINE:
 		strcpy(tempstr, fmt::format(_("low dur, {:+d}% damage"), x->_iPLDam).c_str());
@@ -3654,10 +3654,10 @@ void PrintItemPower(char plidx, ItemStruct *x)
 		strcpy(tempstr, fmt::format(_("to hit: {:+d}%, {:+d}% damage"), x->_iPLToHit, x->_iPLDam).c_str());
 		break;
 	case IPL_ACDEMON:
-		strcpy(tempstr, _("extra AC vs demons"));
+		strcpy(tempstr, _("DOZ. 3AVNTA OT DEMOHOB"));
 		break;
 	case IPL_ACUNDEAD:
-		strcpy(tempstr, _("extra AC vs undead"));
+		strcpy(tempstr, _("DOZ. 3AVNTA OT HE)KNTN"));
 		break;
 	case IPL_MANATOLIFE:
 		/*xgettext:no-c-format*/ strcpy(tempstr, _("50% Mana moved to Health"));
@@ -3666,7 +3666,7 @@ void PrintItemPower(char plidx, ItemStruct *x)
 		/*xgettext:no-c-format*/ strcpy(tempstr, _("40% Health moved to Mana"));
 		break;
 	default:
-		strcpy(tempstr, _("Another ability (NW)"));
+		strcpy(tempstr, _("DPYFAR XAPAKTEPNCTNKA (NW)"));
 		break;
 	}
 }
@@ -3733,40 +3733,40 @@ void DrawUniqueInfo(const CelOutputBuffer &out)
 void PrintItemMisc(ItemStruct *x)
 {
 	if (x->_iMiscId == IMISC_SCROLL) {
-		strcpy(tempstr, _("Right-click to read"));
+		strcpy(tempstr, _("ZKM - ZPO4ECTL"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId == IMISC_SCROLLT) {
-		strcpy(tempstr, _("Right-click to read, then"));
+		strcpy(tempstr, _("3ATEM ZKM - ZPO4ECTL"));
 		AddPanelString(tempstr);
-		strcpy(tempstr, _("left-click to target"));
+		strcpy(tempstr, _("/KM HA QE/L"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId >= IMISC_USEFIRST && x->_iMiscId <= IMISC_USELAST) {
 		PrintItemOil(x->_iMiscId);
-		strcpy(tempstr, _("Right-click to use"));
+		strcpy(tempstr, _("ZKM - NCZO/L3OBATL"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId > IMISC_OILFIRST && x->_iMiscId < IMISC_OILLAST) {
 		PrintItemOil(x->_iMiscId);
-		strcpy(tempstr, _("Right click to use"));
+		strcpy(tempstr, _("ZKM - NCZO/L3OBATL"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId > IMISC_RUNEFIRST && x->_iMiscId < IMISC_RUNELAST) {
 		PrintItemOil(x->_iMiscId);
-		strcpy(tempstr, _("Right click to use"));
+		strcpy(tempstr, _("ZKM - NCZO/L3OBATL"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId == IMISC_BOOK) {
-		strcpy(tempstr, _("Right-click to read"));
+		strcpy(tempstr, _("ZKM - ZPO4ECTL"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId == IMISC_NOTE) {
-		strcpy(tempstr, _("Right click to read"));
+		strcpy(tempstr, _("ZKM - ZPO4ECTL"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId == IMISC_MAPOFDOOM) {
-		strcpy(tempstr, _("Right-click to view"));
+		strcpy(tempstr, _("ZKM - ZPO4ECTL"));
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId == IMISC_EAR) {
@@ -3774,7 +3774,7 @@ void PrintItemMisc(ItemStruct *x)
 		AddPanelString(tempstr);
 	}
 	if (x->_iMiscId == IMISC_AURIC) {
-		strcpy(tempstr, _("Doubles gold capacity"));
+		strcpy(tempstr, _("YDBANBAET BMECTNMOCTL 3O/OTA"));
 		AddPanelString(tempstr);
 	}
 }
@@ -3786,7 +3786,7 @@ static void PrintItemInfo(ItemStruct *x)
 	uint8_t dex = x->_iMinDex;
 	uint8_t mag = x->_iMinMag;
 	if (str != 0 || mag != 0 || dex != 0) {
-		strcpy(tempstr, _("Required:"));
+		strcpy(tempstr, _("TPE#.:"));
 		if (str)
 			strcpy(tempstr + strlen(tempstr), fmt::format(_(" {:d} Str"), str).c_str());
 		if (mag)
@@ -3838,7 +3838,7 @@ void PrintItemDetails(ItemStruct *x)
 		AddPanelString(tempstr);
 	}
 	if (x->_iMagical == ITEM_QUALITY_UNIQUE) {
-		AddPanelString(_("unique item"));
+		AddPanelString(_("YHNKYM"));
 		uitemflag = true;
 		curruitem = *x;
 	}
@@ -3865,7 +3865,7 @@ void PrintItemDur(ItemStruct *x)
 			AddPanelString(tempstr);
 		}
 		if (x->_iMagical != ITEM_QUALITY_NORMAL)
-			AddPanelString(_("Not Identified"));
+			AddPanelString(_("HE OZO3HAHO"));
 	}
 	if (x->_iClass == ICLASS_ARMOR) {
 		if (x->_iMaxDur == DUR_INDESTRUCTIBLE)
@@ -3874,14 +3874,14 @@ void PrintItemDur(ItemStruct *x)
 			strcpy(tempstr, fmt::format(_("armor: {:d}  Dur: {:d}/{:d}"), x->_iAC, x->_iDurability, x->_iMaxDur).c_str());
 		AddPanelString(tempstr);
 		if (x->_iMagical != ITEM_QUALITY_NORMAL)
-			AddPanelString(_("Not Identified"));
+			AddPanelString(_("HE OZO3HAHO"));
 		if (x->_iMiscId == IMISC_STAFF && x->_iMaxCharges) {
 			strcpy(tempstr, fmt::format(_("Charges: {:d}/{:d}"), x->_iCharges, x->_iMaxCharges).c_str());
 			AddPanelString(tempstr);
 		}
 	}
 	if (x->_itype == ITYPE_RING || x->_itype == ITYPE_AMULET)
-		AddPanelString(_("Not Identified"));
+		AddPanelString(_("HE OZO3HAHO"));
 	PrintItemInfo(x);
 }
 

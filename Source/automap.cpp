@@ -387,13 +387,13 @@ void DrawAutomapText(const CelOutputBuffer &out)
 
 	if (gbIsMultiplayer) {
 		if (strcasecmp("0.0.0.0", szPlayerName) != 0) {
-			strcat(strcpy(desc, _("game: ")), szPlayerName);
+			strcat(strcpy(desc, _("NFPA: ")), szPlayerName);
 			DrawString(out, desc, { 8, nextLine, 0, 0 });
 			nextLine += 15;
 		}
 
 		if (szPlayerDescript[0] != '\0') {
-			strcat(strcpy(desc, _("password: ")), szPlayerDescript);
+			strcat(strcpy(desc, _("ZAPO/L: ")), szPlayerDescript);
 			DrawString(out, desc, { 8, nextLine, 0, 0 });
 			nextLine += 15;
 		}

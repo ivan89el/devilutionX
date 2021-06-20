@@ -93,7 +93,7 @@ void InitSmith(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = AnimOrder;
 	towner.animOrderSize = sizeof(AnimOrder);
 	LoadTownerAnimations(towner, "Towners\\Smith\\SmithN.CEL", 16, initData.dir, 3);
-	towner._tName = _("Griswold the Blacksmith");
+	towner._tName = _("KY3HEQ FPN3BO/LD");
 }
 
 void InitBarOwner(TownerStruct &towner, const TownerInit &initData)
@@ -116,7 +116,7 @@ void InitBarOwner(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = AnimOrder;
 	towner.animOrderSize = sizeof(AnimOrder);
 	LoadTownerAnimations(towner, "Towners\\TwnF\\TwnFN.CEL", 16, initData.dir, 3);
-	towner._tName = _("Ogden the Tavern owner");
+	towner._tName = _("OFDEH, XO3RNH TABEPHLI");
 }
 
 void InitTownDead(TownerStruct &towner, const TownerInit &initData)
@@ -126,7 +126,7 @@ void InitTownDead(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = nullptr;
 	towner.animOrderSize = 0;
 	LoadTownerAnimations(towner, "Towners\\Butch\\Deadguy.CEL", 8, initData.dir, 6);
-	towner._tName = _("Wounded Townsman");
+	towner._tName = _("PAHEHLI& )KNTE/L");
 }
 
 void InitWitch(TownerStruct &towner, const TownerInit &initData)
@@ -149,7 +149,7 @@ void InitWitch(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = AnimOrder;
 	towner.animOrderSize = sizeof(AnimOrder);
 	LoadTownerAnimations(towner, "Towners\\TownWmn1\\Witch.CEL", 19, initData.dir, 6);
-	towner._tName = _("Adria the Witch");
+	towner._tName = _("BEDLMA ADPNR");
 }
 
 void InitBarmaid(TownerStruct &towner, const TownerInit &initData)
@@ -159,7 +159,7 @@ void InitBarmaid(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = nullptr;
 	towner.animOrderSize = 0;
 	LoadTownerAnimations(towner, "Towners\\TownWmn1\\WmnN.CEL", 18, initData.dir, 6);
-	towner._tName = _("Gillian the Barmaid");
+	towner._tName = _("ZOMOVHNQA D)KN//NAH");
 }
 
 void InitBoy(TownerStruct &towner, const TownerInit &initData)
@@ -169,7 +169,7 @@ void InitBoy(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = nullptr;
 	towner.animOrderSize = 0;
 	LoadTownerAnimations(towner, "Towners\\TownBoy\\PegKid1.CEL", 20, initData.dir, 6);
-	towner._tName = _("Wirt the Peg-legged boy");
+	towner._tName = _("KA/EKA BNPT");
 }
 
 void InitHealer(TownerStruct &towner, const TownerInit &initData)
@@ -192,7 +192,7 @@ void InitHealer(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = AnimOrder;
 	towner.animOrderSize = sizeof(AnimOrder);
 	LoadTownerAnimations(towner, "Towners\\Healer\\Healer.CEL", 20, initData.dir, 6);
-	towner._tName = _("Pepin the Healer");
+	towner._tName = _("QE/NTE/L ZEZNH");
 }
 
 void InitTeller(TownerStruct &towner, const TownerInit &initData)
@@ -210,7 +210,7 @@ void InitTeller(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = AnimOrder;
 	towner.animOrderSize = sizeof(AnimOrder);
 	LoadTownerAnimations(towner, "Towners\\Strytell\\Strytell.CEL", 25, initData.dir, 3);
-	towner._tName = _("Cain the Elder");
+	towner._tName = _("CTAPOCTA KANH");
 }
 
 void InitDrunk(TownerStruct &towner, const TownerInit &initData)
@@ -227,7 +227,7 @@ void InitDrunk(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = AnimOrder;
 	towner.animOrderSize = sizeof(AnimOrder);
 	LoadTownerAnimations(towner, "Towners\\Drunk\\TwnDrunk.CEL", 18, initData.dir, 3);
-	towner._tName = _("Farnham the Drunk");
+	towner._tName = _("ZLRHNQA (PAPHAM");
 }
 
 void InitCows(TownerStruct &towner, const TownerInit &initData)
@@ -240,7 +240,7 @@ void InitCows(TownerStruct &towner, const TownerInit &initData)
 	}
 	NewTownerAnim(towner, towner._tNAnim[initData.dir], 12, 3);
 	towner._tAnimFrame = GenerateRnd(11) + 1;
-	towner._tName = _("Cow");
+	towner._tName = _("KOPOBA");
 
 	const Point position = initData.position;
 	const Point offset = position + CowOffsets[initData.dir];
@@ -260,7 +260,7 @@ void InitFarmer(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = nullptr;
 	towner.animOrderSize = 0;
 	LoadTownerAnimations(towner, "Towners\\Farmer\\Farmrn2.CEL", 15, initData.dir, 3);
-	towner._tName = _("Lester the farmer");
+	towner._tName = _("(PEPMEP /ECTEP");
 }
 
 void InitCowFarmer(TownerStruct &towner, const TownerInit &initData)
@@ -274,7 +274,7 @@ void InitCowFarmer(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = nullptr;
 	towner.animOrderSize = 0;
 	LoadTownerAnimations(towner, celPath, 15, initData.dir, 3);
-	towner._tName = _("Complete Nut");
+	towner._tName = _("ZO/HLI& DYPAK");
 }
 
 void InitGirl(TownerStruct &towner, const TownerInit &initData)
@@ -288,7 +288,7 @@ void InitGirl(TownerStruct &towner, const TownerInit &initData)
 	towner.animOrder = nullptr;
 	towner.animOrderSize = 0;
 	LoadTownerAnimations(towner, celPath, 20, initData.dir, 6);
-	towner._tName = "Celia";
+	towner._tName = "QE/NR";
 }
 
 void TownDead(TownerStruct &towner)
@@ -301,7 +301,7 @@ void TownDead(TownerStruct &towner)
 
 	if ((quests[Q_BUTCHER]._qactive == QUEST_DONE || quests[Q_BUTCHER]._qvar1 == 1) && towner._tAnimLen != 1) {
 		towner._tAnimLen = 1;
-		towner._tName = _("Slain Townsman");
+		towner._tName = _("Y#NTLI& )KNTE/L");
 	}
 }
 

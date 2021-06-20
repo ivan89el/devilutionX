@@ -122,9 +122,9 @@ void DrawHelp(const CelOutputBuffer &out)
 
 	const char *title;
 	if (gbIsHellfire)
-		title = gbIsSpawn ? _("Shareware Hellfire Help") : _("Hellfire Help");
+		title = gbIsSpawn ? _("Shareware Hellfire Help") : _("ZOMOVL ZO NFPE");
 	else
-		title = gbIsSpawn ? _("Shareware Diablo Help") : _("Diablo Help");
+		title = gbIsSpawn ? _("Shareware Diablo Help") : _("ZOMOVL ZO NFPE");
 	PrintSString(out, 0, 2, title, UIS_GOLD | UIS_CENTER);
 
 	DrawSLine(out, 5);
@@ -148,7 +148,7 @@ void DrawHelp(const CelOutputBuffer &out)
 		DrawString(out, &line[offset], { sx, sy + i * 12, 577, 12 }, style);
 	}
 
-	PrintSString(out, 0, 23, _("Press ESC to end or the arrow keys to scroll."), UIS_GOLD | UIS_CENTER);
+	PrintSString(out, 0, 23, _("NCZO/L3Y&TE KYPCOP D/R ZPOKPYTKN, ECK D/R BLIXODA"), UIS_GOLD | UIS_CENTER);
 }
 
 void DisplayHelp()
