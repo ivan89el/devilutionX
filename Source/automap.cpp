@@ -1,7 +1,7 @@
 /**
  * @file automap.cpp
  *
- * Implementation of the in-game map overlay.
+ * Implementation of the in-game map overlay1.
  */
 #include "automap.h"
 
